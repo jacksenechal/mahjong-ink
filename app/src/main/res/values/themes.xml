@@ -21,7 +21,6 @@
 
         <!-- Status bar -->
         <item name="android:statusBarColor">@color/white</item>
-        <item name="android:windowLightStatusBar">true</item>
 
         <!-- No animations for e-ink -->
         <item name="android:windowAnimationStyle">@null</item>

@@ -56,6 +56,26 @@ Download the latest APK from the [Releases](../../releases) page or from the bui
    ./gradlew test
    ```
 
+### Gradle wrapper note
+
+This repo intentionally does **not** commit `gradle/wrapper/gradle-wrapper.jar` to avoid binary-file restrictions in some PR tooling.
+
+- CI bootstraps it automatically before running `./gradlew`.
+- If you need to regenerate it locally, run:
+  ```bash
+  gradle wrapper --gradle-version 8.2
+  ```
+
+## Versioning Strategy
+
+The app version is generated automatically at build time:
+
+- `versionCode` uses `GITHUB_RUN_NUMBER` in CI for monotonically increasing Play Store-safe build numbers.
+- Local builds fall back to `git rev-list --count HEAD`, so developer APKs also get deterministic increasing codes.
+- `versionName` is formatted as `1.0.<versionCode>` for easy traceability between APK artifacts and CI runs.
+
+This strategy keeps versions unique across automated builds without requiring manual edits to `build.gradle`.
+
 ## Architecture
 
 The app follows a clean, layered architecture:
