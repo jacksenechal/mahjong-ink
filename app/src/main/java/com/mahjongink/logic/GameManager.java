@@ -106,7 +106,16 @@ public class GameManager {
      * Handles tile selection. Returns true if a pair was removed.
      */
     public boolean onTileSelected(Tile tile) {
-        if (currentBoard == null || tile == null || tile.isRemoved()) {
+        if (currentBoard == null) {
+            return false;
+        }
+
+        if (tile == null) {
+            checkGameState();
+            return false;
+        }
+
+        if (tile.isRemoved()) {
             return false;
         }
 
