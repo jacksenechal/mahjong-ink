@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mahjong Ink</string>
+    <string name="new_game">New Game</string>
+    <string name="select_layout">Select Layout</string>
+    <string name="hint">Hint</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="mode_fixed">Fixed Layout</string>
+    <string name="mode_random">Random</string>
+    <string name="mode_progressive">Progressive</string>
+</resources>

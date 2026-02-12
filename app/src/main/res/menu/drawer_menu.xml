@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_new_game"
+            android:title="New Game" />
+
+        <item
+            android:id="@+id/nav_select_layout"
+            android:title="Select Layout" />
+    </group>
+
+    <item android:title="Difficulty">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_difficulty_easy"
+                    android:title="Easy" />
+                <item
+                    android:id="@+id/nav_difficulty_medium"
+                    android:title="Medium"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/nav_difficulty_hard"
+                    android:title="Hard" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Layout Mode">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_mode_fixed"
+                    android:title="Fixed Layout" />
+                <item
+                    android:id="@+id/nav_mode_random"
+                    android:title="Random"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/nav_mode_progressive"
+                    android:title="Progressive" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

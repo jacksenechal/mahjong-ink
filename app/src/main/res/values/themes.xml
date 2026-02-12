@@ -1,0 +1,30 @@
+<resources>
+    <!-- E-ink optimized theme - minimal styling, high contrast -->
+    <style name="Theme.MahjongInk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Surface -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- No animations for e-ink -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowContentTransitions">false</item>
+    </style>
+</resources>
